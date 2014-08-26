@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
  
     @user.update(users_params)
-    redirect_to @user
+    redirect_to home_path
   end
 
   private
