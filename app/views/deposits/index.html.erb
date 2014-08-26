@@ -1,0 +1,18 @@
+<h1>Listing articles</h1>
+
+<%= link_to 'Crear deposito nuevo', new_deposit_path %>
+<table>
+  <tr>
+    <th>Cantidad</th>
+    <th>Depositante</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+<% @deposits.each do |deposit| %>
+  <tr>
+    <td><%= deposit.amount %></td>
+    <td><%= User.find(deposit.user_id).username  %></td>
+    <td><%= link_to 'Show', deposit_path(deposit) %></td>
+  </tr>
+<% end %>
+</table>

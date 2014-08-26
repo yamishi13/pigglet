@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140824174045) do
+ActiveRecord::Schema.define(version: 20140826051630) do
 
   create_table "deposits", force: true do |t|
     t.float    "amount"
@@ -28,5 +28,15 @@ ActiveRecord::Schema.define(version: 20140824174045) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "withdrawals", force: true do |t|
+    t.float    "amount"
+    t.text     "reason"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "withdrawals", ["user_id"], name: "index_withdrawals_on_user_id"
 
 end

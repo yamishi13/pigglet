@@ -1,0 +1,16 @@
+<p>
+  <strong>Cantidad:</strong>
+  <%= @deposit.amount %>
+</p>
+ 
+<p>
+  <strong>Depositante:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+	<strong>Fecha:</strong>
+	<%= @deposit.created_at %>
+</p>
+
+<%= link_to 'Atras', deposits_path %>

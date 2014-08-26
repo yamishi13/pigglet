@@ -1,0 +1,14 @@
+<h1>Deposito nuevo</h1>
+ 
+<%= form_for @deposit do |f| %>
+  <p>
+    <%= f.label :cantidad %><br>
+    <%= f.text_field :amount %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Atras', deposits_path %>
