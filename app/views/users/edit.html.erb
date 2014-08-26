@@ -1,0 +1,19 @@
+<h1>Editar credenciales</h1>
+ 
+<%= form_for @user do |f| %>
+  <p>
+    <%= f.label :usuario %><br>
+    <%= f.text_field :username %>
+  </p>
+ 
+  <p>
+    <%= f.label :contraseña %><br>
+    <%= f.text_area :password %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 
+<%= link_to 'Atras', home_path %>
