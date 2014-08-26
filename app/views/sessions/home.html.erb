@@ -1,5 +1,5 @@
 <p>
-	<%= link_to 'Editar credenciales', edit_user_path %>
+	<%= link_to 'Editar credenciales', edit_user_path(session[:user_id]) %>
 </p>
 <p>
 	<%= link_to 'Depositos', deposits_path %>
