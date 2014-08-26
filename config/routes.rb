@@ -14,5 +14,7 @@ Rails.application.routes.draw do
   resources :deposits, only: [:index, :new, :create, :show]
 
   resources :withdrawals, only: [:index, :new, :create, :show]
+
+  resources :statistics, only: [:index]
   
 end

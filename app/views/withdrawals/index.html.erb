@@ -1,0 +1,18 @@
+<h1>Todos los retiros</h1>
+
+<%= link_to 'Crear retiro nuevo', new_withdrawal_path %>
+<table>
+  <tr>
+    <th>Cantidad</th>
+    <th>Depositante</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+<% @withdrawals.each do |withdrawal| %>
+  <tr>
+    <td><%= withdrawal.amount %></td>
+    <td><%= User.find(withdrawal.user_id).username  %></td>
+    <td><%= link_to 'Show', withdrawal_path(withdrawal) %></td>
+  </tr>
+<% end %>
+</table>

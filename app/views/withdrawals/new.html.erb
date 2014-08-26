@@ -1,0 +1,19 @@
+<h1>Retiro nuevo</h1>
+ 
+<%= form_for @withdrawal do |f| %>
+  <p>
+    <%= f.label :cantidad %><br>
+    <%= f.text_field :amount %>
+  </p>
+
+  <p>
+  	<%= f.label :razon %><br>
+  	<%= f.text_area :reason %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Atras', withdrawals_path %>

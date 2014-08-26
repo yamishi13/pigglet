@@ -1,0 +1,21 @@
+<p>
+  <strong>Cantidad:</strong>
+  <%= @withdrawal.amount %>
+</p>
+
+<p>
+	<strong>Razón:</strong>
+	<%= @withdrawal.reason %>
+</p>
+ 
+<p>
+  <strong>Depositante:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+	<strong>Fecha:</strong>
+	<%= @withdrawal.created_at %>
+</p>
+
+<%= link_to 'Atras', withdrawals_path %>
