@@ -5,7 +5,11 @@ class UsersController < ApplicationController
   end
 
   def edit
+      if params[:id] != session[:id]
+        redirect_to home_path
+      else
         @user = User.find(params[:id])
+      end
   end
 
   def update
