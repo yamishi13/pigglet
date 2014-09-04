@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-      if params[:id] != session[:id]
+      if params[:id].to_s != session[:user_id].to_s
         redirect_to home_path
       else
         @user = User.find(params[:id])

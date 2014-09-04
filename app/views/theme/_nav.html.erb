@@ -1,0 +1,32 @@
+<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav side-nav">
+    <li>
+      <a href="javascript:;" data-toggle="collapse" data-target="#deposito"><i class="fa fa-fw fa-credit-card"></i> Depositos <i class="fa fa-fw fa-caret-down"></i></a>
+      <ul id="deposito" class="collapse">
+        <li>
+          <a href="<%= new_deposit_path %>">Nuevo deposito</a>
+        </li>
+        <li>
+          <a href="<%= deposits_path %>">Mostrar depositos</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="javascript:;" data-toggle="collapse" data-target="#retiro"><i class="fa fa-fw fa-credit-card"></i> Retiros <i class="fa fa-fw fa-caret-down"></i></a>
+      <ul id="retiro" class="collapse">
+        <li>
+          <a href="<%= new_withdrawal_path %>">Nuevo retiro</a>
+        </li>
+        <li>
+          <a href="<%= withdrawals_path %>">Mostrar retiros</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="<%= statistics_path %>"><i class="fa fa-fw fa-line-chart"></i> Estadisticas</a>
+    </li>
+  </ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
