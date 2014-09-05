@@ -30,3 +30,4 @@ gem 'spring',        group: :development
 gem 'less-rails'
 gem 'compass-rails'
 gem 'twitter-bootstrap-rails'
+gem 'font-awesome-rails'
