@@ -28,4 +28,5 @@ gem 'spring',        group: :development
 
 # Bootstrap and rails integration
 gem 'less-rails'
+gem 'compass-rails'
 gem 'twitter-bootstrap-rails'

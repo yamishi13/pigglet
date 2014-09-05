@@ -14,9 +14,11 @@
     <![endif]-->
 </head>
 <body>
+  <% unless request.env['PATH_INFO'] == "/login" or request.env['PATH_INFO'] == "/" %>
+    <%= render 'theme/top' %>
+  <% end %>
   <div id="page-wrapper">
     <div class="container-fluid">
-
 <%= yield %>
 
     </div>
